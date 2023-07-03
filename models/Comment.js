@@ -30,10 +30,11 @@ Comment.init(
         },
     },
     },
-     {
+    {
     sequelize: connection,
     freezeTableName: true,
     modelName: 'comment',
-});
+}
+);
 
 module.exports = Comment;
