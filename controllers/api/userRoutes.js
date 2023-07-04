@@ -10,7 +10,7 @@ router.post('/', async (req, res ) => {
     try {
       const newUser = await User.create({
         username: req.body.username,
-        email: req.body.email,
+        userEmail: req.body.email,
         password: req.body.password,
       });
       // TODO: modify session object to include user info and loggedIn boolean
