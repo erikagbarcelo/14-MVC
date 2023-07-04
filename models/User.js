@@ -52,11 +52,12 @@ User.init(
                 updatedUserData.password = hashedPassword;
                 return updatedUserData;
         },
+        },
         sequelize: connection,
         timestamps: false,
         freezeTableName: true,
         modelName: 'user',
     }
-});
+);
 
 module.exports = User;
